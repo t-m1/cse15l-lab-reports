@@ -8,13 +8,15 @@ For all of these cases, the working directory will be /lecture1.
 [user@sahara ~/lecture1]$ cd
 [user@sahara ~]$
 ```
-Using cd with no argument takes you back to the starting directory. This output is not an error. 
+Using cd with no argument takes you back to the starting directory. This output is not an error.
+
 **2) Path to a directory as an argument**
 ```
 [user@sahara ~/lecture1]$ cd messages/
 [user@sahara ~/lecture1/messages]$
 ```
 Using cd with a path to a directory as an argument takes you to that directory. This output is not an error.
+
 **3) Path to a file as an argument**
 ```
 [user@sahara ~/lecture1]$ cd Hello.java 
