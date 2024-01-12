@@ -2,6 +2,7 @@
 ***
 ## CD
 For all of these cases, the working directory will be /lecture1.
+
 **1) No Arguments**
 ```
 [user@sahara ~/lecture1]$ cd
