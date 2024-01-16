@@ -29,6 +29,7 @@ Using cd with a path to a file as an argument that returns an error, which state
 **1) No Arguments**
 
 The directory will be ./lecture1/messages.
+
 ```
 [user@sahara ~/lecture1/messages]$ ls
 en-us.txt  es-mx.txt  fr.txt  zh-cn.txt
@@ -38,6 +39,7 @@ Using ls with no argument displays the files in the current directory. This outp
 **2) Path to a directory as an argument**
 
 The directory will be ./lecture1.
+
 ```
 [user@sahara ~/lecture1]$ ls messages/
 en-us.txt  es-mx.txt  fr.txt  zh-cn.txt
@@ -47,6 +49,7 @@ Using ls with a path to a directory as an argument lists the files that are in t
 **3) Path to a file as an argument**
 
 The directory will be ./lecture1.
+
 ```
 [user@sahara ~/lecture1]$ ls Hello.java
 Hello.java
@@ -58,6 +61,7 @@ Using ls with a path to a file as an argument just prints the name of the file u
 **1) No Arguments**
 
 The directory will be ./lecture1.
+
 ```
 [user@sahara ~/lecture1]$ cat
 Hello World
@@ -69,6 +73,7 @@ Using cat with no argument prints whatever was typed in the terminal, and will c
 **2) Path to a directory as an argument**
 
 The directory will be ./lecture1.
+
 ```
 [user@sahara ~/lecture1]$ cat messages/
 cat: messages/: Is a directory
@@ -78,6 +83,7 @@ Using cat with a path to a directory as an argument prints out an error message 
 **3) Path to a file as an argument**
 
 The directory will be ./lecture1.
+
 ```
 [user@sahara ~/lecture1]$ cat Hello.java
 import java.io.IOException;
