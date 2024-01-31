@@ -1,14 +1,14 @@
 # **Lab Report 1**
 ***
-## CD
-For all of these cases, the working directory will be ./lecture1.
+## ```CD```
+For all of these cases, the working directory will be /user@sahara/lecture1.
 
 **1) No Arguments**
 ```
 [user@sahara ~/lecture1]$ cd
 [user@sahara ~]$
 ```
-Using cd with no argument takes you back to the starting directory. This output is not an error.
+Using cd with no argument takes you back to the starting directory, which is also known as the home directory. In this case, the home directory is the user directory user@sahara. This output is not an error.
 
 **2) Path to a directory as an argument**
 ```
@@ -24,11 +24,11 @@ bash: cd: Hello.java: Not a directory
 ```
 Using cd with a path to a file as an argument that returns an error, which states that Hello.java is not a directory. Since Hello.java is a file, using cd Hello.java won't work.
 
-## LS
+## ```LS```
 
 **1) No Arguments**
 
-The directory will be ./lecture1/messages.
+The directory will be /user@sahara/lecture1/messages.
 
 ```
 [user@sahara ~/lecture1/messages]$ ls
@@ -38,7 +38,7 @@ Using ls with no argument displays the files in the current directory. This outp
 
 **2) Path to a directory as an argument**
 
-The directory will be ./lecture1.
+The directory will be /user@sahara/lecture1.
 
 ```
 [user@sahara ~/lecture1]$ ls messages/
@@ -48,7 +48,7 @@ Using ls with a path to a directory as an argument lists the files that are in t
 
 **3) Path to a file as an argument**
 
-The directory will be ./lecture1.
+The directory will be /user@sahara/lecture1.
 
 ```
 [user@sahara ~/lecture1]$ ls Hello.java
@@ -56,11 +56,11 @@ Hello.java
 ```
 Using ls with a path to a file as an argument just prints the name of the file used as an argument. This is not an error.
 
-## CAT
+## ```CAT```
 
 **1) No Arguments**
 
-The directory will be ./lecture1.
+The directory will be /user@sahara/lecture1.
 
 ```
 [user@sahara ~/lecture1]$ cat
@@ -72,7 +72,7 @@ Using cat with no argument prints whatever was typed in the terminal, and will c
 
 **2) Path to a directory as an argument**
 
-The directory will be ./lecture1.
+The directory will be /user@sahara/lecture1.
 
 ```
 [user@sahara ~/lecture1]$ cat messages/
@@ -82,7 +82,7 @@ Using cat with a path to a directory as an argument prints out an error message 
 
 **3) Path to a file as an argument**
 
-The directory will be ./lecture1.
+The directory will be /user@sahara/lecture1.
 
 ```
 [user@sahara ~/lecture1]$ cat Hello.java
