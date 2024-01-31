@@ -2,7 +2,7 @@
 
 ***
 
-## ```CD```
+## `CD`
 For all of these cases, the working directory will be `/user@sahara/lecture1`.
 
 **1) No Arguments**
@@ -26,7 +26,7 @@ bash: cd: Hello.java: Not a directory
 ```
 Using `cd` with a path to a file as an argument that returns an error, which states that Hello.java is not a directory. Since Hello.java is a file, using `cd Hello.java` won't work.
 
-## ```LS```
+## `LS`
 
 **1) No Arguments**
 
@@ -58,7 +58,7 @@ Hello.java
 ```
 Using `ls` with a path to a file as an argument just prints the name of the file used as an argument. This is not an error.
 
-## ```CAT```
+## `CAT`
 
 **1) No Arguments**
 
