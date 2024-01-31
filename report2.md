@@ -11,7 +11,6 @@ import java.net.URI;
 class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
-    String user;
     String message = "";
 
     public String handleRequest(URI url) {
@@ -50,7 +49,12 @@ class ChatServer {
 }
 ```
 ![Image](image1.png)
-
-
+In this first screenshot, `/add-message?s=Hello&user=tmasood` was added to the url. In my code, the `handleRequest` method was called
 ![Image](image.png)
 
+## Part 2: SSH Key
+![Image](private.png)
+![Image](public.png)
+![Image](nopassword.png)
+## Part 3: New Information
+Something new that I learned in these labs is that it is possible to run a server using Java. You are also able to modify data on the page by changing the url.
