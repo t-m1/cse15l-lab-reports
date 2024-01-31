@@ -1,4 +1,4 @@
-# **Lab Report 1**
+# **Lab Report 2**
 
 ***
 
@@ -49,3 +49,8 @@ class ChatServer {
     }
 }
 ```
+![Image](image1.png)
+
+
+![Image](image.png)
+
