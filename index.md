@@ -10,7 +10,7 @@ For all of these cases, the working directory will be `/user@sahara/lecture1`.
 [user@sahara ~/lecture1]$ cd
 [user@sahara ~]$
 ```
-Using `cd` with no argument takes you back to the starting directory, which is also known as the home directory. In this case, the home directory is the user directory user@sahara. This output is not an error.
+Using `cd` with no argument takes you back to the starting directory, which is also known as the home directory. In this case, the home directory is the user directory `user@sahara`. This output is not an error.
 
 **2) Path to a directory as an argument**
 ```
@@ -24,7 +24,7 @@ Using `cd` with a path to a directory as an argument takes you to that directory
 [user@sahara ~/lecture1]$ cd Hello.java 
 bash: cd: Hello.java: Not a directory
 ```
-Using `cd` with a path to a file as an argument that returns an error, which states that Hello.java is not a directory. Since Hello.java is a file, using `cd Hello.java` won't work.
+Using `cd` with a path to a file as an argument that returns an error, which states that `Hello.java` is not a directory. Since `Hello.java` is a file, using `cd Hello.java` won't work.
 
 ## `LS`
 
@@ -70,7 +70,7 @@ Hello World
 Hello World
 ^C
 ```
-Using `cat` with no argument prints whatever was typed in the terminal, and will continue to run until it is terminated, by using ctrl + c. This is not an error because the `cat` command is taking input from the terminal. 
+Using `cat` with no argument prints whatever was typed in the terminal, and will continue to run until it is terminated, by using `ctrl + c`. This is not an error because the `cat` command is taking input from the terminal. 
 
 **2) Path to a directory as an argument**
 
@@ -80,7 +80,7 @@ The directory will be `/user@sahara/lecture1`.
 [user@sahara ~/lecture1]$ cat messages/
 cat: messages/: Is a directory
 ```
-Using `cat` with a path to a directory as an argument prints out an error message stating that ./messages is a directory. `Cat` does not work when using a directory as an argument. 
+Using `cat` with a path to a directory as an argument prints out an error message stating that `/user@sahara/lecture1/messages` is a directory. `Cat` does not work when using a directory as an argument. 
 
 **3) Path to a file as an argument**
 
@@ -99,7 +99,7 @@ public class Hello {
     System.out.println(content);
   }
 ```
-Using `cat` with a path to a file as an argument prints out the contents of the file. In this case, it printed out the code that was in the Hello.java file, which is not an error.
+Using `cat` with a path to a file as an argument prints out the contents of the file. In this case, it printed out the code that was in the `Hello.java` file, which is not an error.
 
 
 
