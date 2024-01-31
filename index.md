@@ -1,5 +1,7 @@
 # **Lab Report 1**
+
 ***
+
 ## ```CD```
 For all of these cases, the working directory will be /user@sahara/lecture1.
 
