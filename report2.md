@@ -53,8 +53,11 @@ In this first screenshot, `/add-message?s=Hello&user=tmasood` was added to the u
 ![Image](image.png)
 The same methods from the first screenshot are being called. The argument is changed to `/add-message?s=How are you&user=Me`. The main difference between this screenshot and the first is that the username and message are different. This means that the `message` variable is being updated. Also, the previous values are not erased, they are just added on. The `URI url` value that is being passed as an argument for the `handleRequest` method is updated every time the url is updated.
 ## Part 2: SSH Key
-![Image](private.png)
-![Image](public.png)
+Private Key:
+//![Image](private.png)
+Public Key:
+//![Image](public.png)
+Logging on without a password:
 ![Image](nopassword.png)
 ## Part 3: New Information
 Something new that I learned in these labs is that it is possible to run a server using Java. You are also able to modify data on the page by changing the url.
