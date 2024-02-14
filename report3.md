@@ -75,6 +75,7 @@ $ less -E biomed/1471-2091-3-22.txt
 *rest of the file, outputs the next page after pressing space*
 *quits automatically*
 ```
+For both of these code blocks, you can traverse the file one page at a time, and when you get to the end, it automatically quits and puts you back into the terminal.
 2. `less - f [input file]`
 ```
 itztm@LAPTOP-CVDGHEVR MINGW64 ~/docsearch/technical (main)
@@ -86,7 +87,7 @@ $ less -f 911report/chapter-1.txt
 *rest of the file, outputs the next page after pressing space*
 (END)
 ```
-
+For this code block, the command works as regular since it is a regular file.
 ```
 itztm@LAPTOP-CVDGHEVR MINGW64 ~/docsearch/technical (main)
 $ less -f 911report/
@@ -107,7 +108,7 @@ $ less -f 911report/
 ~
 (END)
 ```
-
+In this code block, `-f` is allowing us to run `less` on a directory, even though nothing gets outputted.
 3. `less - F [input file]`
 ```
 itztm@LAPTOP-CVDGHEVR MINGW64 ~/docsearch/technical (main)
@@ -119,7 +120,7 @@ $ less -f 911report/chapter-1.txt
 *rest of the file, outputs the next page after pressing space*
 (END)
 ```
-
+In this code block, `less` works regularly because the file is longer than a page.
 ```
 itztm@LAPTOP-CVDGHEVR MINGW64 ~/docsearch/technical (main)
 $ less -F plos/pmed.0020191.txt 
@@ -144,7 +145,7 @@ $ less -F plos/pmed.0020191.txt
 itztm@LAPTOP-CVDGHEVR MINGW64 ~/docsearch/technical (main)
 $
 ```
-
+Here, `less -F` prints the entire file and then exits without opening up another window because the file is less than a page long.
 4. `less - p pattern [input file]`
 ```
 itztm@LAPTOP-CVDGHEVR MINGW64 ~/docsearch/technical (main)
@@ -156,7 +157,7 @@ Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the easter
 *rest of the file, outputs the next page after pressing space*
 (END)
 ```
-
+In this code block, `-p Tuesday` makes it so the file starts at where the first Tuesday appears, which removes `"WE HAVE SOME PLANES"` from being outputted.
 ```
 itztm@LAPTOP-CVDGHEVR MINGW64 ~/docsearch/technical (main)
 $ less -p meta-question plos/pmed.0020191.txt
@@ -178,3 +179,5 @@ $ less -p meta-question plos/pmed.0020191.txt
 ~
 (END)
 ```
+In this code block, it only prints the last sentence of the file because that is the first time `meta-question` appears in the file. 
+My source is https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Linux_-_The_Penguin_Marches_On_(McClanahan)/05%3A_File_and_Directory_Management/3.06%3A_Working_with_Files_and_Directories/3.06.02%3A_Working_with_Files_and_Directories_-_less-more_Command 
