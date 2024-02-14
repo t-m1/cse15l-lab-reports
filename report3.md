@@ -23,6 +23,8 @@ Input that doesn't induce a failure:
     assertArrayEquals(new int[]{ 3 }, input1);
 	}
 ```
+Symptom:
+![Image](image.png)
 Before code (with bug):
 ```
 static void reverseInPlace(int[] arr) {
