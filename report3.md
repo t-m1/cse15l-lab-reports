@@ -59,7 +59,7 @@ $ less -E 911report/chapter-1.txt
 *rest of the file, outputs the next page after pressing space*
 *quits automatically*
 ```
-
+For this code block, less allows you to traverse the file one page at a time. The `-E` option automatically quits once you get to the end of the file which is useful because it takes you back to the terminal without having to manually exit.
 ```
 itztm@LAPTOP-CVDGHEVR MINGW64 ~/docsearch/technical (main)
 $ less -E biomed/1471-2091-3-22.txt
@@ -76,7 +76,8 @@ $ less -E biomed/1471-2091-3-22.txt
 *rest of the file, outputs the next page after pressing space*
 *quits automatically*
 ```
-For both of these code blocks, you can traverse the file one page at a time, and when you get to the end, it automatically quits and puts you back into the terminal.
+For this code block, you can traverse the file one page at a time, and the `-E` option allows it so when you get to the end, it automatically quits and puts you back into the terminal.
+
 2. `less - f [input file]`
 
 ```
@@ -90,7 +91,7 @@ $ less -f 911report/chapter-1.txt
 (END)
 ```
 
-For this code block, the command works as regular since it is a regular file.
+For this code block, the command works as regular since it is a regular file. This is because the `-f` option only goes into effect if a non-regular file is being opened, and does not affect normal files.
 
 ```
 itztm@LAPTOP-CVDGHEVR MINGW64 ~/docsearch/technical (main)
@@ -113,7 +114,7 @@ $ less -f 911report/
 (END)
 ```
 
-In this code block, `-f` is allowing us to run `less` on a directory, even though nothing gets outputted.
+In this code block, `-f` is allowing us to run `less` on a directory, since it forces non regular files to open. However, nothing gets outputted because `less` isnt able to traverse directories. All `-f` does is force the command to work.
 
 3. `less - F [input file]`
 
@@ -128,7 +129,7 @@ $ less -f 911report/chapter-1.txt
 (END)
 ```
 
-In this code block, `less` works regularly because the file is longer than a page.
+In this code block, `less` works regularly because the file is longer than a page. The `-F` option makes it so `less` exits the file if it can be displayed on the first screen, which is not the case in this example.
 
 ```
 itztm@LAPTOP-CVDGHEVR MINGW64 ~/docsearch/technical (main)
@@ -169,7 +170,7 @@ Tuesday, September 11, 2001, dawned temperate and nearly cloudless in the easter
 (END)
 ```
 
-In this code block, `-p Tuesday` makes it so the file starts at where the first Tuesday appears, which removes `"WE HAVE SOME PLANES"` from being outputted.
+In this code block, `-p Tuesday` makes it so the file starts at where the first Tuesday appears, which removes `"WE HAVE SOME PLANES"` from being outputted. This is useful for finding specific phrases in the file.
 
 ```
 itztm@LAPTOP-CVDGHEVR MINGW64 ~/docsearch/technical (main)
@@ -193,5 +194,6 @@ $ less -p meta-question plos/pmed.0020191.txt
 (END)
 ```
 
-In this code block, it only prints the last sentence of the file because that is the first time `meta-question` appears in the file. 
+In this code block, it only prints the last sentence of the file because that is the first time `meta-question` appears in the file. This is a simple way to isolate a chunk of the file. 
+
 My source is https://eng.libretexts.org/Bookshelves/Computer_Science/Operating_Systems/Linux_-_The_Penguin_Marches_On_(McClanahan)/05%3A_File_and_Directory_Management/3.06%3A_Working_with_Files_and_Directories/3.06.02%3A_Working_with_Files_and_Directories_-_less-more_Command 
