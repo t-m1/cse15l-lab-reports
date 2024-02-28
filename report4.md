@@ -9,7 +9,7 @@ Keys Pressed: `ssh<space>tmasood@ieng6.ucsd.edu<enter>`. I typed this command to
 ## Step 2: Clone fork of repository
 ![Image](7image2.png)
 
-Keys Pressed: 'git clone<space><right click><enter>'.
+Keys Pressed: `git clone<space><rightclick><enter>'.
 ## Step 3: Run tests, showing failure
 ![Image](7image3.png)
 
