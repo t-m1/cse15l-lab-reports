@@ -13,7 +13,7 @@ Keys Pressed: `git clone<space><rightclick><enter>`.
 ## Step 3: Run tests, showing failure
 ![Image](7image3.png)
 
-Keys Pressed: 'bash<space>test.sh<enter>`.
+Keys Pressed: `bash<space>test.sh<enter>`.
 ## Step 4: Edit code to fix
 ![Image](7image4.png)
 
