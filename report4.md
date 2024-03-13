@@ -26,4 +26,4 @@ Keys Pressed: `<up><up><enter>`. The `bash test.sh` command was 2 up in the sear
 ![Image](7image6.png)
 ![Image](7image7.png)
 
-Keys Pressed: `git<space>add<space>ListExamples.java<enter>`, `git<space>commit<space>-m<space>"fixed<space>bug"<enter>`, `git<space>push<enter>. I ran the `git add`, `git commit`, and `git push` commands, which update the file, commit, and push the results onto my Github account. My commit message was `fixed bug`.
+Keys Pressed: `git<space>add<space>ListExamples.java<enter>`, `git<space>commit<space>-m<space>"fixed<space>bug"<enter>`, `git<space>push<enter>`. I ran the `git add`, `git commit`, and `git push` commands, which update the file, commit, and push the results onto my Github account. My commit message was `fixed bug`.
